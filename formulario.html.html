@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formulario.css.css">
+</head>
+<body>
+    <header>
+        <nav class ="navbar section-content">
+            <a hre="#" class="nav-logo">
+             <h2 class="logo-text">📚Peliculas</h2>   
+             
+            </a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+            </li> 
+            <li class="nav-item">
+               <a href="formulario.html.html" class="nav-link">Formulario</a>
+            </li>
+                    
+                 </li> 
+                 <li class="nav-item">
+                    <a href="tabla.html.html" class="nav-link">Tabla</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="multimedia.html.html" class="nav-link">Multimedia</a>
+                </li> 
+    
+            </ul>
+    
+    
+        </nav>
+    
+       </header>
+<div class="form-container">
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Información Personal</legend>
+
+            <label for="nombre">Nombre Completo:</label>
+            <input class="Marco" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required pattern="[A-Za-z\s]+" title="Solo letras y espacios" />
+
+            <label for="correo">Correo Electrónico:</label>
+            <input class="Marco" type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com" required />
+
+            <label for="contrasena">Contraseña:</label>
+<input class="Marco" type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" required
+       pattern=".{6,}" title="Debe tener al menos 6 caracteres" />
+
+       <label for="telefono">Teléfono:</label>
+<input class="Marco" type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono" required
+       pattern="[0-9]{8}" title="Debe contener 8 dígitos numéricos" />
+
+
+       <label for="fecha">Fecha:</label>
+       <input class="Marco" type="date" id="fecha" name="fecha" min="2000-01-01" max="2025-12-31" required />
+
+       
+       <legend>Por favor, selecciona tu método de contacto preferido:</legend>
+       <br>
+       
+       <div>
+         <input type="radio" id="contactChoice1" name="contact" value="email" />
+         <label for="contactChoice1">Correo electrónico</label>
+         <input type="radio" id="contactChoice2" name="contact" value="phone" />
+         <label for="contactChoice2">Teléfono</label>
+         <input type="radio" id="contactChoice3" name="contact" value="mail" />
+         <label for="contactChoice3">Correo postal</label>
+       </div>
+<br>
+
+            <label for="carrera">Selección de Carrera o Interés:</label>
+            <select id="carrera" name="carrera" required>
+                <option value="" disabled selected>Selecciona un genero de tu interes</option>
+                <option value="peliculas">Comedia</option>
+                <option value="peliculas">Terror</option>
+                <option value="peliculas">Romance</option>
+                <option value="peliculas">Accion</option>  
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        </fieldset>
+        <div class="checkbox">
+            <input type="checkbox" id="terminos" name="terminos">
+            <label for="terminos">Acepto los términos y condiciones</label>
+          </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+</body>
+</html>

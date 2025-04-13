@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+:root{
+    --primer-color: #0a0606;
+    --dark-color: #252522;
+    --segundo-color: #FFC0CB;
+    --tercer-color:#FFDFD3;
+    --link-pink-color:#fff;
+    --medium-gray-color: #ccc;
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl:2.3rem;
+
+    --font-weight-normal: 8px;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600px;
+    --font-weight-bold: 700px;
+
+    --border-radius-s: 8px;
+    --border-redius-m: 30px;
+    --border-redius-circule: 50%;
+
+    --site-max-width: 1300px;
+}
+
+header {
+    background: var(--segundo-color);
+padding: 20px;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px ;
+    color: var(--primer-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-redius-m);
+    transition: 0.3s ease;
+}
+.navbar .nav-menu .nav-link:hover{
+    color: var(--segundo-color);
+    background: var(--tercer-color)
+
+}
+.navbar .nav-logo .logo-text{
+    color: var(--primer-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-s);
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul {
+    list-style: none;}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border:  none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 25px;
+}
+
+article {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgb(102, 99, 101);
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: #f993a4;
+    text-align: center;
+}
+
+ol, ul {
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+    
+
+}

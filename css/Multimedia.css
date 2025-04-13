@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 6px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+:root{
+  --primer-color: #0a0606;
+  --dark-color: #252522;
+  --segundo-color: #FFC0CB;
+  --tercer-color:#FFDFD3;
+  --link-pink-color:#fff;
+  --medium-gray-color: #ccc;
+
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl:2.3rem;
+
+  --font-weight-normal: 8px;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600px;
+  --font-weight-bold: 700px;
+
+  --border-radius-s: 8px;
+  --border-redius-m: 30px;
+  --border-redius-circule: 50%;
+
+  --site-max-width: 1300px;
+}
+
+header {
+  background: var(--segundo-color);
+padding: 20px;
+}
+
+header .navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-menu .nav-link{
+  padding: 10px 18px ;
+  color: var(--primer-color);
+  font-size: var(--font-size-m);
+  border-radius: var(--border-redius-m);
+  transition: 0.3s ease;
+}
+.navbar .nav-menu .nav-link:hover{
+  color: var(--segundo-color);
+  background: var(--tercer-color)
+
+}
+.navbar .nav-logo .logo-text{
+  color: var(--primer-color);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-s);
+}
+
+.navbar .nav-menu{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+ul {
+  list-style: none;}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border:  none;
+  background: none;
+}
+
+img{
+  width: 100%;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px;
+  background-color: #F7E7CE; /* Pastel */
+  color: #333333;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-out;
+}
+
+.container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Animación creativa 1: Sombra más pronunciada al hacer hover */
+  transform: translateY(-5px); /* Ligeramente elevado al hacer hover */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transición suave para la sombra y la elevación */
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #AEC6CF; /* Pastel */
+  margin-bottom: 20px;
+  animation: big-bounce 1.2s ease-in-out infinite alternate; /* Animación de salto más grande */
+  transition: color 0.4s ease-in;
+  font-weight: bold; /* Hacer la letra más gruesa */
+}
+
+@keyframes big-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); } /* Salto más alto */
+}
+
+h1:hover {
+  color: #8AA8B9; /* Pastel */
+}
+
+.person-media {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E0E0E0;
+  transition: border-bottom-color 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  margin-left: 200px;
+}
+
+/* Efecto para Odaly (la segunda sección .person-media) - Rotación */
+.person-media:nth-child(2):hover {
+  border-bottom-color: #CCC;
+  transform: rotate(3deg); /* Rotar ligeramente */
+  transition: border-bottom-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Efecto para Mariana (la tercera sección .person-media) - Elevar con sombra */
+.person-media:nth-child(3):hover {
+  border-bottom-color: #CCC;
+  transform: translateY(-5px); /* Elevar ligeramente */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+  transition: border-bottom-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto para Gaby (la cuarta sección .person-media) - Cambiar el color de fondo */
+.person-media:nth-child(4):hover {
+  border-bottom-color: #CCC;
+  background-color: #F2F2F2; /* Cambiar el color de fondo a un gris claro */
+  transition: border-bottom-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Títulos de cada chica con fuentes distintas, animación y transición */
+.person-media h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 0;
+  animation: bounce-text 1s ease-in-out infinite alternate;
+  transition: color 0.3s ease-in-out;
+  text-shadow: 2px 2px #E0E0E0; /* Efecto de "sello" */
+}
+
+.person-media:nth-child(2) h2 { /* Odaly */
+  font-family: 'Sacramento', cursive;
+  color: #D291BC; /* Pastel */
+}
+
+.person-media:nth-child(3) h2 { /* Mariana */
+  font-family: 'Lobster Two', cursive;
+  color: #957DAD; /* Pastel */
+}
+
+.person-media:nth-child(4) h2 { /* Gaby */
+  font-family: 'Pacifico', cursive;
+  color: #AEC6CF; /* Pastel */
+}
+
+.person-media h2:hover {
+  color: #957DAD; /* Pastel */
+  text-shadow: 3px 3px #CCC;
+  transform: translateY(-2px);
+}
+
+.person-media:nth-child(3) h2:hover {
+  color: #D291BC;
+}
+
+.person-media:nth-child(4) h2:hover {
+  color: #BBDDE5;
+}
+
+.media-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.media-item {
+  flex: 1;
+  padding: 15px;
+  background-color: #F9F9F9; /* Casi blanco pastel */
+  border-radius: 8px;
+  border: 1px solid #E0E0E0;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease-in-out, border-color 0.3s ease-in-out;
+  max-width: 500px;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.media-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 15px rgba(174, 198, 207, 0.7); /* Borde iluminado */
+  border-color: #AEC6CF;
+}
+
+.media-item h3 {
+  font-size: 1.1em;
+  color: #555555;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: color 0.5s ease;
+}
+
+.media-item h3:hover {
+  color: #333;
+}
+
+.video-container {
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  box-shadow:
+      2px 2px 0 #F08080, /* Color principal */
+      4px 4px 0 #E67E22,
+      6px 6px 0 #F1C40F;
+  padding: 10px;
+  background-color: #F08080; /* Rosado pastel */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.audio-container {
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  box-shadow:
+      2px 2px 0 #ADD8E6, /* Color principal */
+      4px 4px 0 #87CEEB,
+      6px 6px 0 #6495ED;
+  padding: 10px;
+  background-color: #ADD8E6; /* Azul claro pastel */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición para el cambio de tamaño y sombra */
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Para apilar el audio y el título */
+  align-items: stretch; /* Para que el audio se estire al ancho del contenedor */
+}
+
+.video-container video,
+.audio-container audio {
+  max-width: 100%;
+  height: auto;
+}
+
+.audio-container audio {
+  display: block;
+  width: 100%;
+  min-width: 100%; /* Asegura un ancho mínimo */
+  height: auto; /* Asegura que la altura se ajuste al reproductor */
+  min-height: 40px; /* Asegura un tamaño mínimo para la visibilidad del reproductor */
+}
+
+.video-container:hover {
+  transform: translate(-3px, -3px); /* Ligeramente hacia arriba y a la izquierda */
+  box-shadow:
+      1px 1px 0 #F08080,
+      2px 2px 0 #E67E22,
+      3px 3px 0 #F1C40F,
+      0 8px 16px rgba(0, 0, 0, 0.2); /* Añadimos la sombra al contenedor */
+}
+
+.audio-container:hover {
+  transform: translate(-3px, -3px); /* Ligeramente hacia arriba y a la izquierda */
+  box-shadow:
+      1px 1px 0 #ADD8E6,
+      2px 2px 0 #87CEEB,
+      3px 3px 0 #6495ED,
+      0 8px 16px rgba(0, 0, 0, 0.2); /* Añadimos la sombra al contenedor */
+}
+
+.animations {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #E0E0E0;
+  margin-top: 30px;
+}
+
+.animations h2 {
+  font-family: 'Pacifico', cursive; /* Fuente llamativa */
+  color: #8FBC8F; /* Verde pastel */
+  margin-bottom: 15px;
+  font-size: 2.2em; /* Aumentar un poco el tamaño */
+  animation: rainbow-text 3s linear infinite alternate;
+  transition: transform 0.3s ease-in-out;
+}
+
+.animations h2:hover {
+  transform: scale(1.05);
+}
+
+@keyframes rainbow-text {
+  0% { color: #FFDAB9; transform: scale(1); } /* Durazno pastel */
+  16.66% { color: #F0E68C; transform: scale(1.05); } /* Amarillo claro pastel */
+  33.33% { color: #AFEEEE; transform: scale(1); } /* Aguamarina pastel */
+  50% { color: #98FB98; transform: scale(1.05); } /* Verde claro pastel */
+  66.66% { color: #E0FFFF; transform: scale(1); } /* Cian claro pastel */
+  83.33% { color: #DDA0DD; transform: scale(1.05); } /* Lila pastel */
+  100% { color: #FFA07A; transform: scale(1); } /* Salmón pastel */
+}
+
+.animations {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #E0E0E0;
+  margin-top: 30px;
+}
+
+.animations h2 {
+  font-family: 'Pacifico', cursive; /* Fuente llamativa */
+  color: #8FBC8F; /* Verde pastel */
+  margin-bottom: 15px;
+  font-size: 2.2em; /* Aumentar un poco el tamaño */
+  animation: rainbow-text 3s linear infinite alternate;
+  transition: transform 0.3s ease-in-out;
+}
+
+.animations h2:hover {
+  transform: scale(1.05);
+}
+
+@keyframes rainbow-text {
+  0% { color: #FFDAB9; transform: scale(1); } /* Durazno pastel */
+  16.66% { color: #F0E68C; transform: scale(1.05); } /* Amarillo claro pastel */
+  33.33% { color: #AFEEEE; transform: scale(1); } /* Aguamarina pastel */
+  50% { color: #98FB98; transform: scale(1.05); } /* Verde claro pastel */
+  66.66% { color: #E0FFFF; transform: scale(1); } /* Cian claro pastel */
+  83.33% { color: #DDA0DD; transform: scale(1.05); } /* Lila pastel */
+  100% { color: #FFA07A; transform: scale(1); } /* Salmón pastel */
+}
+
+.animation {
+  display: inline-block;
+  width: 180px; /* Aumentar el ancho de los botones */
+  height: 70px; /* Aumentar la altura de los botones */
+  background-color: #AEC6CF; /* Color pastel original */
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  background-image: linear-gradient(to right, #AEC6CF, #D291BC); /* Tu gradiente pastel */
+  background-clip: padding-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask-composite: add;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out, transform 0.3s ease-out, box-shadow 0.3s ease-in, background-image 2s linear infinite; /* Reducimos la duración a 2 segundos */
+  border-radius: 8px;
+  margin: 10px;
+  font-size: 1.4em; /* Aumentar el tamaño de la fuente en los botones */
+  line-height: 70px; /* Ajustar el line-height para centrar el texto */
+  text-align: center;
+  text-decoration: none;
+  background-size: 600% 100%; /* Para que el gradiente tenga espacio para moverse */
+  box-sizing: border-box;
+}
+
+.animation.color-change {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red); /* Gradiente cíclico */
+  animation: rainbow-background 2s linear infinite; /* Reducimos la duración a 2 segundos */
+  color: white; /* Aseguramos que el texto sea visible sobre el fondo cambiante */
+  -webkit-background-clip: border-box; /* Volvemos al clipping del borde */
+  background-clip: border-box;
+  -webkit-text-fill-color: white; /* Aseguramos que el texto sea blanco */
+}
+
+.animation:hover {
+  border: 2px solid #8AA8B9; /* Un color sólido al hacer hover */
+  background-image: linear-gradient(to right, #D291BC, #AEC6CF); /* Invertir el gradiente al hacer hover */
+  transform: scale(1.15); /* Aumentar un poco más al hacer hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Sombra ligeramente mayor al hacer hover */
+}
+
+/* Animaciones continuas */
+.rotation {
+  animation: rotate-360 2s linear infinite;
+}
+
+.pulse {
+  animation: pulse-smooth 1.5s infinite alternate; /* Aplicar animación de pulso */
+}
+
+.bounce {
+  animation: bounce-up-down 1s ease-in-out infinite alternate;
+}
+
+/* Keyframes para las animaciones */
+@keyframes rotate-360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-smooth {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.08); opacity: 1; } /* Ligeramente más grande y opaco */
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes bounce-up-down {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+
+/* Animación para el cambio de color del fondo */
+@keyframes rainbow-background {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
